@@ -3,3 +3,26 @@
 ## answer is: 
 
 mkdir -p a/{b/{d/{i/m/z,/j/l/z},e/h/l/z},c/{f/h/l/z,,g/k/l/z}}
+
+
+## second task:
+
+date
+which date
+ls -l /bin/date
+chmod -x /bin/date
+date
+adduser -s /bin/date neha
+su - neha
+setfacl -m u:neha:wrx /bin/date
+su - neha
+setfacl -m u:root:--- /bin/date
+chmod -x/bin/date
+date
+
+
+## task 4:
+### cal command run every 10s and store in a file 
+
+## the ans is=
+for i in 0 1 2 3 4 5 6 7 8 9; do cal>> exmp.txt; sleep 1;done
